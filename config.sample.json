@@ -1,0 +1,29 @@
+{
+  "stockfish": {
+    "path": "/opt/homebrew/bin/stockfish",
+    "time_limit": 3.0,
+    "min_depth": 25,
+    "multipv": 3
+  },
+  "openai": {
+    "model": "gpt-3.5-turbo",
+    "temperature": 0.7,
+    "max_tokens": 512,
+    "max_retries": 5
+  },
+  "lesson_generation": {
+    "max_attempts": 5,
+    "fork_evaluation_threshold": 300
+  },
+  "difficulty": {
+    "mate_in_1_threshold": 500,
+    "winning_advantage_threshold": 1000,
+    "intermediate_threshold": 500,
+    "advanced_threshold": 200
+  },
+  "logging": {
+    "level": "INFO",
+    "format": "%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+    "file": "chess_lesson_engine.log"
+  }
+}
